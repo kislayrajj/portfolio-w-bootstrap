@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+" />
+  </head>
+  <body data-bs-theme="dark">
+    <div><!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" aria-label="Eighth navbar example">
+            <div class="container">
+              <a class="navbar-brand" href="#">Kislay Raj</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="mailto:wrkislayraj89@gmail.com">Email</a></li>
+                      <li><a class="dropdown-item" href="https://www.linkedin.com/in/kislay-raj-b462502a6" target="_blank" rel="noopener noreferrer">LinkedIn </a></li>
+                      <li><a class="dropdown-item" href="https://www.instagram.com/kislayrajj" target="_blank" rel="noopener noreferrer">Instagram </a></li>
+                      <li><a class="dropdown-item" href="https://www.twitter.com/Kislayrajj" target="_blank" rel="noopener noreferrer">Twitter </a></li>
+                      <li><a class="dropdown-item" href="#">Contact Section</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form role="search">
+                  <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </form>
+    
+                <div class="form-check form-switch mx-lg-5 my-3 my-lg-0">
+                    <input class="form-check-input" type="checkbox" id="theme-toggle">
+                    <label class="form-check-label" for="theme-toggle">Toggle Theme</label>
+                  </div>
+                  
+              </div>
+            </div>
+          </nav>
+    
+        <!-- hero -->
+        <div id="home" class="container col-xxl-8 px-4 py-5">
+          <div class="row flex-lg-row-reverse align-items-center g-5  py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <a
+                href="https://portfolio-w-react.vercel.app/"
+                target="_blank"
+                rel="noreferrer noopener"
+                data-bs-toggle="tooltip"
+                data-bs-title="Click to visit main Website">
+                <img
+                  src="./assets/images/hero.png"
+                  class="d-block mx-lg-auto img-fluid"
+                  alt="Bootstrap Themes"
+                  width="700"
+                  height="500"
+                  loading="lazy" />
+              </a>
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                Transforming Ideas into Reality
+              </h1>
+              <p class="lead">
+                I'm Kislay Raj, a skilled web developer specializing in crafting
+                responsive and dynamic websites. Dive into my projects to see the
+                innovative solutions I've developed, and feel free to reach out
+                for collaboration opportunities.
+              </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="https://portfolio-w-react.vercel.app/Projects" target="_blank" rel="noopener noreferrer"
+                data-bs-toggle="tooltip"
+                data-bs-title="View My Projects">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+                  View Projects
+                </button></a>
+                <a href="mailto:wrkislayraj89@gmail.com"
+                data-bs-toggle="tooltip"
+                data-bs-title="Email Me">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary btn-lg px-4">
+                  Say Hi !
+                </button>
+            </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- about -->
+        <div id="about" class="px-4 pt-5 my-5 text-center border-bottom">
+          <h1 class="display-4 fw-bold text-body-emphasis">About Me</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">
+              With several years of experience in web development, I specialize in
+              creating dynamic, user-friendly websites using both foundational and
+              modern technologies. My expertise includes core web technologies
+              such as <span class="badge bg-light text-dark">HTML</span> and
+              <span class="badge bg-light text-dark">CSS</span>, as well as
+              advanced frameworks and tools like
+              <span class="badge bg-light text-dark">ReactJS</span>,
+              <span class="badge bg-light text-dark">Angular</span>,
+              <span class="badge bg-light text-dark">TypeScript</span>, and
+              <span class="badge bg-light text-dark">Tailwind CSS</span>.
+              
+            </p>
+    
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+              <a
+                href="https://github.com/kislayrajj"
+                target="_blank"
+                rel="noreferrer noopener"
+                data-bs-toggle="tooltip"
+                data-bs-title="Go to GitHub">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">
+                  Visit GitHub
+                </button>
+              </a>
+              <button
+                onclick="downloadPDF()"
+                data-bs-toggle="tooltip"
+                data-bs-title="Download My Resume"
+                type="button"
+                class="btn btn-outline-secondary btn-lg px-4 d-flex align-items-center">
+                Resume
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-download ms-2"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                  <path
+                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="overflow-hidden" style="max-height: 30vh">
+            <div class="container px-5">
+              <img
+                src="./assets/images/aboutSkills2.png"
+                class="img-fluid border rounded-3 shadow-lg mb-4"
+                alt="Example image"
+                width="700"
+                height="500"
+                loading="lazy" />
+            </div>
+          </div>
+        </div>
+    
+
+      <!-- services -->
+      <div class="container px-4 py-5" id="services">
+        <h2 class="pb-2 border-bottom">Our Services</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="30"
+                fill="currentColor"
+                class="bi bi-braces"
+                viewBox="0 0 16 16">
+                <path
+                  d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6M13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6" />
+              </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Website Building</h3>
+            <p>
+              We create stunning and functional websites tailored to your needs.
+              Our approach combines modern design practices with user-centric
+              functionality.
+            </p>
+            <a href="#" class="icon-link">
+              Learn More
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chevron-right"
+                viewBox="0 0 16 16">
+                <path
+                  fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+              </svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="30"
+                fill="currentColor"
+                class="bi bi-window-stack"
+                viewBox="0 0 16 16">
+                <path
+                  d="M4.5 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1M6 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0" />
+                <path
+                  d="M12 1a2 2 0 0 1 2 2 2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1-2-2V3a2 2 0 0 1 2-2zM2 12V5a2 2 0 0 1 2-2h9a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1m1-4v5a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8zm12-1V5a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v2z" />
+              </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Web App Development</h3>
+            <p>
+              Our expertise in web app development ensures that your
+              applications are scalable, responsive, and meet your specific
+              business requirements.
+            </p>
+            <a href="#" class="icon-link">
+              Explore Services
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chevron-right"
+                viewBox="0 0 16 16">
+                <path
+                  fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+              </svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="30"
+                fill="currentColor"
+                class="bi bi-database-check"
+                viewBox="0 0 16 16">
+                <path
+                  d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514" />
+                <path
+                  d="M12.096 6.223A5 5 0 0 0 13 5.698V7c0 .289-.213.654-.753 1.007a4.5 4.5 0 0 1 1.753.25V4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16c.536 0 1.058-.034 1.555-.097a4.5 4.5 0 0 1-.813-.927Q8.378 15 8 15c-1.464 0-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13h.027a4.6 4.6 0 0 1 0-1H8c-1.464 0-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10q.393 0 .774-.024a4.5 4.5 0 0 1 1.102-1.132C9.298 8.944 8.666 9 8 9c-1.464 0-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777M3 4c0-.374.356-.875 1.318-1.313C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4" />
+              </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Backend Development</h3>
+            <p>
+              We handle backend development to ensure robust, secure, and
+              efficient server-side operations. Our solutions are designed to
+              scale with your needs.
+            </p>
+            <a href="#" class="icon-link">
+              Discover More
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chevron-right"
+                viewBox="0 0 16 16">
+                <path
+                  fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item">
+              <a href="#home" class="nav-link px-2 text-body-secondary">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="mailto:wrkislayraj89@gmail.com" class="nav-link px-2 text-body-secondary">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link px-2 text-body-secondary">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link px-2 text-body-secondary">Projects</a>
+            </li>
+          </ul>
+          <p class="text-center text-body-secondary">
+            &copy; 2024 Kislay Raj
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+    "></script>
+    <script src="script.js"></script>
+  </body>
+</html>
